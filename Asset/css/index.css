@@ -1,4 +1,4 @@
-body {
+/* body {
   background: linear-gradient(#eecda3, #ef629f);
   background-repeat: none;
   height: 100vh;
@@ -33,4 +33,4 @@ body {
 }
 .box-3 {
   transform: perspective(200px) rotateZ(45deg);
-}
+} */

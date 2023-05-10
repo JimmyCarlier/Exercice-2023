@@ -205,7 +205,6 @@
 //     row = "";
 // }
 
-
 // XOXOXO
 
 // let size = 10;
@@ -213,7 +212,7 @@
 
 // for (j = 0; j < size; j++) {
 //     row = ""
-//   for (i = 0; i < size; i++) 
+//   for (i = 0; i < size; i++)
 //     if (i % 2 == 0) {
 //       row += "O";
 //     } else {
@@ -221,7 +220,6 @@
 //     }
 //     console.log(row);
 // }
-
 
 // CHECKERBOARD
 
@@ -247,7 +245,7 @@
 
 // for (j = 0; j < size; j++) {
 //     box = ""
-//   for (i = 0; i < size; i++) 
+//   for (i = 0; i < size; i++)
 //     if ((i+j)%TWO === 0){
 //       box += "X";
 //     } else {
@@ -255,7 +253,6 @@
 //     }
 //     console.log(box);
 // }
-
 
 // Changement image
 // let myImage = document.querySelector('img');
@@ -268,4 +265,5 @@
 //       myImage.setAttribute('src', 'Asset/image/Carré de X.png');
 //     }
 // });
+
 

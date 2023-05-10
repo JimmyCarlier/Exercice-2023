@@ -254,7 +254,6 @@
 //     console.log(box);
 // }
 
-<<<<<<< HEAD
 // Image switcher code
 
 let myImage = document.querySelector('img');
@@ -295,9 +294,6 @@ myButton.onclick = function() {
 }
 
 
-=======
-// Changement image
->>>>>>> a4e331837d15d854107d2e1096b07e9af37a477e
 // let myImage = document.querySelector('img');
 // myImage.addEventListener('click', function() {
 //     let mySrc = myImage.getAttribute('src');

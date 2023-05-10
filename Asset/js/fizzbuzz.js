@@ -255,3 +255,17 @@
 //     }
 //     console.log(box);
 // }
+
+
+// Changement image
+// let myImage = document.querySelector('img');
+
+// myImage.addEventListener('click', function() {
+//     let mySrc = myImage.getAttribute('src');
+//     if (mySrc === 'Asset/image/Carré de X.png') {
+//       myImage.setAttribute('src', 'Asset/image/firefox2.jpg');
+//     } else {
+//       myImage.setAttribute('src', 'Asset/image/Carré de X.png');
+//     }
+// });
+

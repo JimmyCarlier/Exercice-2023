@@ -205,7 +205,6 @@
 //     row = "";
 // }
 
-
 // XOXOXO
 
 // let size = 10;
@@ -213,7 +212,7 @@
 
 // for (j = 0; j < size; j++) {
 //     row = ""
-//   for (i = 0; i < size; i++) 
+//   for (i = 0; i < size; i++)
 //     if (i % 2 == 0) {
 //       row += "O";
 //     } else {
@@ -221,7 +220,6 @@
 //     }
 //     console.log(row);
 // }
-
 
 // CHECKERBOARD
 
@@ -247,7 +245,7 @@
 
 // for (j = 0; j < size; j++) {
 //     box = ""
-//   for (i = 0; i < size; i++) 
+//   for (i = 0; i < size; i++)
 //     if ((i+j)%TWO === 0){
 //       box += "X";
 //     } else {
@@ -256,6 +254,7 @@
 //     console.log(box);
 // }
 
+<<<<<<< HEAD
 // Image switcher code
 
 let myImage = document.querySelector('img');
@@ -296,6 +295,9 @@ myButton.onclick = function() {
 }
 
 
+=======
+// Changement image
+>>>>>>> a4e331837d15d854107d2e1096b07e9af37a477e
 // let myImage = document.querySelector('img');
 // myImage.addEventListener('click', function() {
 //     let mySrc = myImage.getAttribute('src');
@@ -305,4 +307,5 @@ myButton.onclick = function() {
 //       myImage.setAttribute('src', 'Asset/image/firefox-icon.png');
 //     }
 // });
+
 

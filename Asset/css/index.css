@@ -1,0 +1,36 @@
+/* body {
+  background: linear-gradient(#eecda3, #ef629f);
+  background-repeat: none;
+  height: 100vh;
+  text-align: center;
+}
+#image {
+  width: 50%;
+  height: auto;
+  transform-style: preserve-3d;
+}
+
+#image:hover {
+  animation: run-rotation 5s linear infinite;
+}
+
+.run-rotation:hover {
+  animation: run-rotation 5s linear infinite;
+}
+@keyframes run-rotation {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+.box-1 {
+  transform: perspective(200px) rotateX(45deg);
+}
+.box-2 {
+  transform: perspective(200px) rotateY(45deg);
+}
+.box-3 {
+  transform: perspective(200px) rotateZ(45deg);
+} */

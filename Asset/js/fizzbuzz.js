@@ -222,8 +222,7 @@
 // }
 
 // CHECKERBOARD
-
-// let size = 10;
+// let size = prompt("Séléctionnez un nombre");
 // let carac = "X"
 // let row = "";
 
@@ -294,14 +293,14 @@ myButton.onclick = function() {
 }
 
 
-// let myImage = document.querySelector('img');
-// myImage.addEventListener('click', function() {
-//     let mySrc = myImage.getAttribute('src');
-//     if (mySrc === 'Asset/image/firefox-icon.png') {
-//       myImage.setAttribute('src', 'Asset/image/Carré de X.png');
-//     } else {
-//       myImage.setAttribute('src', 'Asset/image/firefox-icon.png');
-//     }
-// });
+let myImage = document.querySelector('img');
+myImage.addEventListener('click', function() {
+    let mySrc = myImage.getAttribute('src');
+    if (mySrc === 'Asset/image/firefox-icon.png') {
+      myImage.setAttribute('src', 'Asset/image/Carré de X.png');
+    } else {
+      myImage.setAttribute('src', 'Asset/image/firefox-icon.png');
+    }
+});
 
 

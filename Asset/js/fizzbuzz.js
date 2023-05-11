@@ -332,3 +332,40 @@
 //     i++;
 //   }
 // }
+
+// let digicode = [];
+// let crack = []
+
+// function code(min, max) {
+//   min = Math.ceil(0);
+//   max = Math.floor(9);
+//   return Math.floor(Math.random() * (max - min + 1) + min);
+// }
+
+// for (let i = 0; i < 3; i++) {
+//   digicode.push(code(0, 9));
+// }
+
+// for(let i=0; i < 3; i++){
+//   for(let j = 0; j <=9 ; j++){
+//     if(digicode[i] == j){
+//       crack.push(j);
+//       break;
+//     } 
+//   }
+//   console.log("crack " + crack + " digicode " + digicode) 
+// }
+
+
+
+
+
+// let computer = []
+
+// for(let j=0; j<=2; j++){
+//   computer[j] = {}
+//   if
+// }
+
+
+

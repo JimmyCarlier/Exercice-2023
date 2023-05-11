@@ -333,13 +333,16 @@
 //   }
 // }
 
+
+// FORCE BRUT
+
 // let digicode = [];
 // let crack = []
 
 // function code(min, max) {
 //   min = Math.ceil(0);
 //   max = Math.floor(9);
-//   return Math.floor(Math.random() * (max - min + 1) + min);
+//   return Math.floor(Math.random() * (max - min));
 // }
 
 // for (let i = 0; i < 3; i++) {
@@ -357,15 +360,6 @@
 // }
 
 
-
-
-
-// let computer = []
-
-// for(let j=0; j<=2; j++){
-//   computer[j] = {}
-//   if
-// }
 
 
 

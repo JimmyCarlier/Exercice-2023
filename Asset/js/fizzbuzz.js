@@ -222,7 +222,7 @@
 // }
 
 // CHECKERBOARD
-// let size = prompt("Séléctionnez un nombre");
+// let size = 10;
 // let carac = "X"
 // let row = "";
 
@@ -255,52 +255,58 @@
 
 // Image switcher code
 
-let myImage = document.querySelector('img');
+// let myImage = document.querySelector('img');
 
-myImage.onclick = function() {
-  let mySrc = myImage.getAttribute('src');
-  if(mySrc === 'images/firefox-icon.png') {
-    myImage.setAttribute ('src','images/firefox2.png');
-  } else {
-    myImage.setAttribute ('src','images/firefox-icon.png');
-  }
-}
+// myImage.onclick = function() {
+//   let mySrc = myImage.getAttribute('src');
+//   if(mySrc === 'images/firefox-icon.png') {
+//     myImage.setAttribute ('src','images/firefox2.png');
+//   } else {
+//     myImage.setAttribute ('src','images/firefox-icon.png');
+//   }
+// }
 
 // Personalized welcome message code
 
-let myButton = document.querySelector('button');
-let myHeading = document.querySelector('h1');
+// let myButton = document.querySelector('button');
+// let myHeading = document.querySelector('h1');
 
-function setUserName() {
-  let myName = prompt('Please enter your name.');
-  if(!myName) {
-    setUserName();
-  } else {
-    localStorage.setItem('name', myName);
-    myHeading.innerHTML = 'Mozilla is cool, ' + myName;
-  }
-}
+// function setUserName() {
+//   let myName = prompt('Please enter your name.');
+//   if(!myName) {
+//     setUserName();
+//   } else {
+//     localStorage.setItem('name', myName);
+//     myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+//   }
+// }
 
-if(!localStorage.getItem('name')) {
-  setUserName();
-} else {
-  let storedName = localStorage.getItem('name');
-  myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
-}
+// if(!localStorage.getItem('name')) {
+//   setUserName();
+// } else {
+//   let storedName = localStorage.getItem('name');
+//   myHeading.innerHTML = 'Mozilla is cool, ' + storedName;
+// }
 
-myButton.onclick = function() {
-  setUserName();
-}
+// myButton.onclick = function() {
+//   setUserName();
+// }
 
+// let myImage = document.querySelector('img');
+// myImage.addEventListener('click', function() {
+//     let mySrc = myImage.getAttribute('src');
+//     if (mySrc === 'Asset/image/firefox-icon.png') {
+//       myImage.setAttribute('src', 'Asset/image/Carré de X.png');
+//     } else {
+//       myImage.setAttribute('src', 'Asset/image/firefox-icon.png');
+//     }
+// });
 
-let myImage = document.querySelector('img');
-myImage.addEventListener('click', function() {
-    let mySrc = myImage.getAttribute('src');
-    if (mySrc === 'Asset/image/firefox-icon.png') {
-      myImage.setAttribute('src', 'Asset/image/Carré de X.png');
-    } else {
-      myImage.setAttribute('src', 'Asset/image/firefox-icon.png');
-    }
-});
+// Chiffre aléatoire entre 1000 et 9999
+// function digicode(min, max) {
+//   min = Math.ceil(1000);
+//   max = Math.floor(9999);
+//   return Math.floor(Math.random() * (max - min));
+// }
 
-
+// console.log(digicode(9999))

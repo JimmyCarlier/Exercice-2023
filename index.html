@@ -1,41 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>My test page</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-    <link href="Asset/css/style.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="Asset/css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Mozilla is cool</h1>
-    <nav><ul>
-      <li><a href="#cat">Nyan Cat</a></li>
-      <li><a href="#map">Map</a></li>
-    </ul></nav>
-    <img src="Asset/image/" alt="The Firefox logo: a flaming fox surrounding the Earth.">
+    <nav>
+      <ul>
+        <li><a href="#cat">Nyan Cat</a></li>
+        <li><a href="#map">Map</a></li>
+      </ul>
+    </nav>
+    <h1 class="head">Mozilla is cool</h1>
+    <img
+      src="Asset/image/"
+      alt="The Firefox logo: a flaming fox surrounding the Earth."
+    />
 
     <p>At Mozilla, we’re a global community of</p>
 
-    <ul> <!-- changed to list in the tutorial -->
+    <ul>
+      <!-- changed to list in the tutorial -->
       <li>technologists</li>
       <li>thinkers</li>
       <li>builders</li>
     </ul>
 
-    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+    <p>
+      working together to keep the Internet alive and accessible, so people
+      worldwide can be informed contributors and creators of the Web. We believe
+      this act of human collaboration across an open platform is essential to
+      individual growth and our collective future.
+    </p>
 
-    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
-  <button>Change user</button>
-  <section id="cat">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jIQ6UV2onyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </section>
-  <section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam delectus eligendi, esse exercitationem voluptatem quo quis obcaecati pariatur hic rem, mollitia nihil sunt beatae dignissimos at. Necessitatibus fugit pariatur quae!
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste velit quam placeat nesciunt incidunt numquam ratione, quibusdam ducimus adipisci amet earum vero, dolores natus obcaecati, pariatur molestiae deserunt nostrum optio.</p>
-  </section>
-  <section id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22635.40628079923!2d-0.6420826000000001!3d44.833261549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1683724107540!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </section>
-  <script src="Asset/js/fizzbuzz.js"></script>
+    <p>
+      Read the
+      <a href="https://www.mozilla.org/en-US/about/manifesto/"
+        >Mozilla Manifesto</a
+      >
+      to learn even more about the values and principles that guide the pursuit
+      of our mission.
+    </p>
+    <button>Change user</button>
+    <section id="cat">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jIQ6UV2onyI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
+    <section>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam delectus
+        eligendi, esse exercitationem voluptatem quo quis obcaecati pariatur hic
+        rem, mollitia nihil sunt beatae dignissimos at. Necessitatibus fugit
+        pariatur quae! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Iste velit quam placeat nesciunt incidunt numquam ratione, quibusdam
+        ducimus adipisci amet earum vero, dolores natus obcaecati, pariatur
+        molestiae deserunt nostrum optio.
+      </p>
+    </section>
+    <section id="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22635.40628079923!2d-0.6420826000000001!3d44.833261549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1683724107540!5m2!1sfr!2sfr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <section>
+        <label for="artist">Choisissez un artitste</label>
+        <select id="artist">
+          <option value="choice">-- Sélectionnez un(e) artiste</option>
+          <option value="Maitre Gims">Maitre Gims</option>
+          <option value="casserolle">Dalida</option>
+          <option value="helicoptère">Balavoine</option>
+        </select>
+      </section>
+      <section>
+        <h1>Maitre gims</h1>
+        <p>Membre du groupe de hip-hop Sexion d'Assaut, il poursuit une carrière individuelle sous le nom de Maître Gims : en 2013, il sort son premier album, Subliminal qui se vend à plus d'un million d'exemplaires et culmine à la deuxième place du classement des albums français. Puis il sort sa réédition : Subliminal la face cachée. Suivent les albums Mon cœur avait raison (2015) et Ceinture noire, et ses deux rééditions (2018, 2019)</p>
+        <img src="Asset/image/Maître_Gims_Cannes_2016_2.jpg">
+        <h2>Mes morceaux préféré</h2>
+        <ul>
+          <li>Bella</li>
+          <li>Hola senorita</li>
+          <li>Est-ce que tu m'aimes</li>
+          <li>Tout donner</li>
+          <li>Mi gna</li>
+        </ul>
+        <p>Le lien vers sa chaîne youtube <a href="https://www.youtube.com/channel/UCCB1Byx5yTbLpQaV-rlfmtA">ici</a></p>
+      </section>
+      <section>
+        <h1>Dalida</h1>
+        <p>Iolanda Cristina Gigliotti, dite Dalida, née le 17 janvier 1933 au Caire (Égypte) et morte le 3 mai 1987 à Paris 18e (France), est une chanteuse et actrice italienne naturalisée françaisea.
+
+          Issue d'une famille italienne installée en Égypte, elle participe à des concours de beauté au début des années 1950 et tourne quelques films au Caire. Résidant en France à partir de 1954, elle connaît son premier succès de chanteuse avec le titre Bambino en 1956. Se façonnant un répertoire regroupant plus de sept cents chansons interprétées en plusieurs langues, elle devient une grande figure de la chanson française et bénéficie d'une popularité dépassant la scène francophone.</p>
+        <img src="Asset/image/">
+        <h2>Mes morceaux préféré</h2>
+        <ul>
+          <li>Parole, parole</li>
+          <li>Helwa Ya Balady</li>
+          <li>Laissez-moi danser</li>
+          <li>Mourrir sur scène</li>
+          <li>Love in Portofino</li>
+        </ul>
+        <p>Le lien vers sa chaîne youtube <a href="https://www.youtube.com/@dalidavideos1083">ici</a></p>
+      </section>
+      <section>
+        <h1>Balavoine</h1>
+        <p>Daniel Balavoine, né le 5 février 1952 à Alençon (Orne) et mort le 14 janvier 1986 aux environs de Rharous (région de Tombouctou, Mali), est un auteur-compositeur-interprète et musicien français.
+
+          Débutant à la fin des années 1960 comme chanteur de bal à Pau, il reprend Bob Dylan, avant d'intégrer de multiples groupes de rock où il signe ses premières compositions1. Il se lance en solo en 1973, très inspiré par le rock progressif d'Outre-Manche (Genesis, Supertramp ou Queen) et connait des débuts difficiles, manquant de tout abandonner2.</p>
+        <img src="Asset/image/Daniel_Balavoine_sur_TF1_en_1980.jpg">
+        <h2>Mes morceaux préféré</h2>
+        <ul>
+          <li>Parole, parole</li>
+          <li>Helwa Ya Balady</li>
+          <li>Laissez-moi danser</li>
+          <li>Mourrir sur scène</li>
+          <li>Love in Portofino</li>
+        </ul>
+        <p>Le lien vers sa chaîne youtube <a href="https://www.youtube.com/@dalidavideos1083">ici</a></p>
+      </section>
+    <script src="Asset/js/fizzbuzz.js"></script>
   </body>
 </html>

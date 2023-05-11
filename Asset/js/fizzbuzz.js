@@ -304,9 +304,31 @@
 
 // Chiffre aléatoire entre 1000 et 9999
 // function digicode(min, max) {
-//   min = Math.ceil(1000);
+//   min = Math.ceil(0);
 //   max = Math.floor(9999);
 //   return Math.floor(Math.random() * (max - min));
 // }
 
 // console.log(digicode(9999))
+
+// const low = 0;
+// const high = 10000;
+
+// function digicode(low, high) {
+//   let lowNumb = Math.ceil(low);
+//   let highNumb = Math.floor(high);
+//   const digicode = lowNumb + Math.random()*(highNumb-lowNumb);
+//   return Math.floor(digicode);
+// }
+
+// let i = 0;
+// const code = digicode(low, high);
+
+// while (i < 10000) {
+//   if (i === code) {
+//     console.log("Le digicode est " + i+".");
+//     break;
+//   } else {
+//     i++;
+//   }
+// }

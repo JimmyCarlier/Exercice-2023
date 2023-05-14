@@ -416,3 +416,33 @@
 //   console.log("crack " + crack + " digicode " + digicode);
 // }
 
+// for (let i = 0; i <= 100; i++) {
+//   let string = "";
+//   if (i % 3 === 0) {
+//     string += "fizz";
+//   }
+//   if (i % 5 === 0) {
+//     string += "buzz";
+//   } if(string === "") {
+//     string += i
+//   }
+//   console.log(string);
+// }
+
+// FIZZ BUZZ TAPIOCA
+// let tableau = [
+//   [3, "Fizz"],
+//   [5, "Buzz"],
+//   [7, "Tapioca"],
+//   [13, "Formica"],
+// ];
+
+// for (let i = 0; i <= 100; i++) {
+//   let string = "";
+//   for (let j = 0; j < tableau.length; j++) {
+//     if (i % tableau[j][0] == 0) {
+//       string += tableau[j][1];
+//     }
+//   }
+//   console.log(string==""?i:string)
+// }

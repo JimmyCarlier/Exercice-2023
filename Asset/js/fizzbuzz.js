@@ -28,11 +28,13 @@
 //     console.log(temp)
 // }
 
+
+
+
 // PORTE
 
 // let gate = [[]]
-// const size = 50
-// // Initialize the gate array with " "
+// const size = 20
 // for (let row = 0; row < size; row++) {
 //     gate[row] = []
 //     for (let column = 0; column < size; column++) {
@@ -41,7 +43,6 @@
 // }
 
 // for (let edge = 0; edge < size / 2; edge += 4) {
-//     // Place a "X" on the edge
 //     for (let row = edge; row < size - edge; row++) {
 //         for (let column = edge; column < size - edge; column++) {
 //             if ((row === edge) || (row === size - 1 - edge)
@@ -52,7 +53,6 @@
 //     }
 // }
 
-// // Display the gate array
 // for (let row = 0; row < size; row++) {
 //     let line = ""
 //     for (let column = 0; column < size; column++) {
@@ -60,6 +60,10 @@
 //     }
 //     console.log(line)
 // }
+
+
+
+
 
 // CASCADE
 
@@ -109,6 +113,10 @@
 //   }
 // }
 
+
+
+
+
 // PIERRE FEUILLE CISEAU
 
 // // Choix du chiffre
@@ -156,6 +164,10 @@
 //   }
 // }
 
+
+
+
+
 // CARRE DE X
 
 // Déclare un tableau vide
@@ -189,6 +201,10 @@
 //   console.log(row);
 // }
 
+
+
+
+
 // CARRE DE X VIDE
 // let size = 10;
 // let row = "";
@@ -204,6 +220,11 @@
 //     console.log(row);
 //     row = "";
 // }
+
+
+
+
+
 
 // XOXOXO
 
@@ -221,7 +242,13 @@
 //     console.log(row);
 // }
 
+
+
+
+
+
 // CHECKERBOARD
+
 // let size = 10;
 // let carac = "X"
 // let row = "";
@@ -252,6 +279,11 @@
 //     }
 //     console.log(box);
 // }
+
+
+
+
+
 
 // Image switcher code
 
@@ -302,6 +334,10 @@
 //     }
 // });
 
+
+
+
+
 // Chiffre aléatoire entre 1000 et 9999
 // function digicode(min, max) {
 //   min = Math.ceil(0);
@@ -332,6 +368,11 @@
 //     i++;
 //   }
 // }
+
+
+
+
+
 
 // FORCE BRUT
 
@@ -416,18 +457,10 @@
 //   console.log("crack " + crack + " digicode " + digicode);
 // }
 
-// for (let i = 0; i <= 100; i++) {
-//   let string = "";
-//   if (i % 3 === 0) {
-//     string += "fizz";
-//   }
-//   if (i % 5 === 0) {
-//     string += "buzz";
-//   } if(string === "") {
-//     string += i
-//   }
-//   console.log(string);
-// }
+
+
+
+
 
 // FIZZ BUZZ TAPIOCA
 // Déclaration du tableau contenant les règles de remplacement
@@ -437,11 +470,10 @@
 //     [7, "Tapioca"], // Si le nombre est divisible par 7, le remplacer par "Tapioca"
 //     [13, "Formica"] // Si le nombre est divisible par 13, le remplacer par "Formica"
 //   ];
-  
+
 //   // Boucle principale pour itérer de 0 à 100
 //   for (let i = 0; i <= 100; i++) {
 //     let string = ""; // Variable pour stocker les chaînes résultantes
-  
 //     // Boucle pour parcourir les règles du tableau
 //     for (let j = 0; j < tableau.length; j++) {
 //       if (i % tableau[j][0] == 0) {
@@ -450,9 +482,10 @@
 //         string += tableau[j][1];
 //       }
 //     }
-  
+
 //     // Vérifie si la variable string est vide
 //     // Si c'est le cas, le nombre n'est pas divisible par les règles spécifiées, donc on l'affiche
 //     // Sinon, on affiche la chaîne résultante obtenue
 //     console.log(string == "" ? i : string);
 //   }
+

@@ -430,19 +430,29 @@
 // }
 
 // FIZZ BUZZ TAPIOCA
+// Déclaration du tableau contenant les règles de remplacement
 // let tableau = [
-//   [3, "Fizz"],
-//   [5, "Buzz"],
-//   [7, "Tapioca"],
-//   [13, "Formica"],
-// ];
-
-// for (let i = 0; i <= 100; i++) {
-//   let string = "";
-//   for (let j = 0; j < tableau.length; j++) {
-//     if (i % tableau[j][0] == 0) {
-//       string += tableau[j][1];
+//     [3, "Fizz"],    // Si le nombre est divisible par 3, le remplacer par "Fizz"
+//     [5, "Buzz"],    // Si le nombre est divisible par 5, le remplacer par "Buzz"
+//     [7, "Tapioca"], // Si le nombre est divisible par 7, le remplacer par "Tapioca"
+//     [13, "Formica"] // Si le nombre est divisible par 13, le remplacer par "Formica"
+//   ];
+  
+//   // Boucle principale pour itérer de 0 à 100
+//   for (let i = 0; i <= 100; i++) {
+//     let string = ""; // Variable pour stocker les chaînes résultantes
+  
+//     // Boucle pour parcourir les règles du tableau
+//     for (let j = 0; j < tableau.length; j++) {
+//       if (i % tableau[j][0] == 0) {
+//         // Vérifie si le nombre actuel (i) est divisible par le premier élément de la règle (tableau[j][0])
+//         // Si c'est le cas, ajoute le deuxième élément de la règle (tableau[j][1]) à la variable string
+//         string += tableau[j][1];
+//       }
 //     }
+  
+//     // Vérifie si la variable string est vide
+//     // Si c'est le cas, le nombre n'est pas divisible par les règles spécifiées, donc on l'affiche
+//     // Sinon, on affiche la chaîne résultante obtenue
+//     console.log(string == "" ? i : string);
 //   }
-//   console.log(string==""?i:string)
-// }

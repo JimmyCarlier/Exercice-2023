@@ -414,6 +414,24 @@
 //   console.log("crack " + crack + " digicode " + digicode);
 // }
 
+// let crack = []
+// let code = []
+
+// for (i=0;i<=2;i++){
+//     code[i] =+ Math.floor(Math.random()*10)
+// }
+
+// let j=0;
+// while (j<3){
+//     for (i=0; i<=9;i++){
+//         if (code[j]===i){
+//             crack.push(i)
+//         }
+//     }
+//     console.log("crack "+crack+"code "+code)
+//     j++
+// }
+
 // FIZZ BUZZ TAPIOCA
 // Déclaration du tableau contenant les règles de remplacement
 // let tableau = [
@@ -475,5 +493,22 @@
 //         line += gate[row][column]; // Ajoute chaque élément de la ligne à une chaîne de caractères
 //     }
 //     console.log(line); // Affiche la ligne dans la console
+// }
+
+
+// let code = []
+// let crack = []
+
+// for (i=0; i<=2;i++){
+//     code[i] =+ Math.floor(Math.random()*10)
+// }
+
+// for (i=0; i<=2;i++){
+//     for (j=0; j<=9;j++){
+//         if (j===code[i]){
+//             crack.push(j)
+//         }
+//     }
+//     console.log("crack "+crack+" code "+code)
 // }
 

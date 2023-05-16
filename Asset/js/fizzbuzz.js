@@ -28,9 +28,6 @@
 //     console.log(temp)
 // }
 
-
-
-
 // PORTE
 
 // let gate = [[]]
@@ -60,10 +57,6 @@
 //     }
 //     console.log(line)
 // }
-
-
-
-
 
 // CASCADE
 
@@ -113,10 +106,6 @@
 //   }
 // }
 
-
-
-
-
 // PIERRE FEUILLE CISEAU
 
 // // Choix du chiffre
@@ -164,10 +153,6 @@
 //   }
 // }
 
-
-
-
-
 // CARRE DE X
 
 // Déclare un tableau vide
@@ -201,10 +186,6 @@
 //   console.log(row);
 // }
 
-
-
-
-
 // CARRE DE X VIDE
 // let size = 10;
 // let row = "";
@@ -221,11 +202,6 @@
 //     row = "";
 // }
 
-
-
-
-
-
 // XOXOXO
 
 // let size = 10;
@@ -241,11 +217,6 @@
 //     }
 //     console.log(row);
 // }
-
-
-
-
-
 
 // CHECKERBOARD
 
@@ -279,11 +250,6 @@
 //     }
 //     console.log(box);
 // }
-
-
-
-
-
 
 // Image switcher code
 
@@ -334,10 +300,6 @@
 //     }
 // });
 
-
-
-
-
 // Chiffre aléatoire entre 1000 et 9999
 // function digicode(min, max) {
 //   min = Math.ceil(0);
@@ -368,11 +330,6 @@
 //     i++;
 //   }
 // }
-
-
-
-
-
 
 // FORCE BRUT
 
@@ -457,11 +414,6 @@
 //   console.log("crack " + crack + " digicode " + digicode);
 // }
 
-
-
-
-
-
 // FIZZ BUZZ TAPIOCA
 // Déclaration du tableau contenant les règles de remplacement
 // let tableau = [
@@ -488,4 +440,40 @@
 //     // Sinon, on affiche la chaîne résultante obtenue
 //     console.log(string == "" ? i : string);
 //   }
+
+// let gate = [[]]; // Déclaration d'une variable 'gate' comme une matrice vide à deux dimensions
+// const size = 20; // Déclaration d'une constante 'size' avec une valeur de 20, représentant la taille de la matrice
+
+// // Boucle pour initialiser la matrice 'gate' avec des espaces vides
+// for (let row = 0; row < size; row++) {
+//     gate[row] = []; // Crée une nouvelle ligne vide dans la matrice
+//     for (let column = 0; column < size; column++) {
+//         gate[row][column] = " "; // Initialise chaque élément de la matrice avec un espace vide
+//     }
+// }
+
+// // Boucle pour dessiner la forme en X dans la matrice 'gate'
+// for (let edge = 0; edge < size / 2; edge += 4) {
+//     // Cette boucle contrôle la taille de la forme en X en ajustant le bord extérieur
+//     for (let row = edge; row < size - edge; row++) {
+//         // Boucle sur les lignes de la matrice
+//         for (let column = edge; column < size - edge; column++) {
+//             // Boucle sur les colonnes de la matrice
+//             if ((row === edge) || (row === size - 1 - edge)
+//                 || (column === edge) || (column === size - 1 - edge)) {
+//                 // Vérifie si la position actuelle est sur l'un des bords de la forme en X
+//                 gate[row][column] = "X"; // Remplit la position avec le caractère "X"
+//             }
+//         }
+//     }
+// }
+
+// // Boucle pour afficher la matrice 'gate' ligne par ligne dans la console
+// for (let row = 0; row < size; row++) {
+//     let line = "";
+//     for (let column = 0; column < size; column++) {
+//         line += gate[row][column]; // Ajoute chaque élément de la ligne à une chaîne de caractères
+//     }
+//     console.log(line); // Affiche la ligne dans la console
+// }
 

@@ -374,6 +374,7 @@
 // }
 
 // if while
+
 // let digicode = [];
 // let crack = [];
 
@@ -512,6 +513,7 @@
 // }
 
 // Ville
+
 // let size = 20;
 // let char = "A";
 // let tableRandom = [];

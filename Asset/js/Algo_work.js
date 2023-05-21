@@ -543,3 +543,27 @@
 // let exerciceAleatoire = table[hasard][1];
 
 // console.log(exerciceAleatoire);
+
+const size = Number(window.prompt("Veuillez saisir un nombre.", ""));
+const charac = window.prompt("Veuillez chosir une lettre")
+let table = [];
+let result;
+
+for (i = 0; i < size; i++) {
+  table[i] = Math.floor(Math.random() * 10);
+}
+
+for (i = 0; i < size; i++) {
+  let row = "";
+  for (j = 0; j < size; j++) {
+    result = (size - table[j]);
+    if (result < i) {
+      row += charac;
+    }
+    if (result >= i) {
+      row += " ";
+    }
+  }
+  console.log(row);
+}
+

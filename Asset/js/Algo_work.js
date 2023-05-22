@@ -538,32 +538,61 @@
 //     console.log(tableVille)
 // }
 
-// let table = [[1, "FizzBuzz"], [2, "Crackcode"], [3, "Ville"], [4, "Carré de X"], [5, "X vide"], [6, "Checkermate"], [7, "XOXO"], [8, "FizzBuzzTapioca"]];
-// let hasard = Math.floor(Math.random() * table.length);
-// let exerciceAleatoire = table[hasard][1];
+// let tableAnimal = [[1, "FizzBuzz"], [2, "Crackcode"], [3, "Ville"], [4, "Carré de X"], [5, "X vide"], [6, "Checkermate"], [7, "XOXO"], [8, "FizzBuzzTapioca"]];
+// let hasard = Math.floor(Math.random() * tableAnimal.length);
+// let exerciceAleatoire = tableAnimal[hasard][1];
 
 // console.log(exerciceAleatoire);
 
-const size = Number(window.prompt("Veuillez saisir un nombre.", ""));
-const charac = window.prompt("Veuillez chosir une lettre")
-let table = [];
-let result;
+// DES
+let dice1 = Math.floor(Math.random() * 3) + 1;
+let dice2 = Math.floor(Math.random() * 3) + 1;
+console.log(dice1 + " - " + dice2);
+//  Des animaux
+let tableAnimal = [
+  [0, "Gnou"],
+  [1, "Antilope"],
+  [2, "Rhinoceroce"],
+];
+let Animal = [];
+for (i = 0; i < 5; i++) {
+  let diceAnimal = Math.floor(Math.random() * tableAnimal.length);
+  Animal[i] = tableAnimal[diceAnimal][1];
+}
+console.log("les animaux sont : " + Animal);
+// Braconniers
+let Braconnier = [];
+for (i = 0; i < 2; i++) {
+  let diceBraconniers = Math.floor(Math.random() * tableAnimal.length);
+  Braconnier[i] = tableAnimal[diceBraconniers][1];
+}
+console.log("les braconniers sont : " + Braconnier);
+// Garde Chasse
+let Garde = [];
 
-for (i = 0; i < size; i++) {
-  table[i] = Math.floor(Math.random() * 10);
+let diceGarde = Math.floor(Math.random() * tableAnimal.length);
+Garde = tableAnimal[diceGarde][1];
+console.log("Le garde chasse est : " + Garde);
+let choice;
+if (dice1 === dice2) {
+  choice = dice1;
+} else {
+  choice = 6 - dice1 - dice2;
+}
+const occ = {};
+
+for (const n of Animal) {
+  occ[n] = occ[n] ? occ[n] + 1 : 1;
 }
 
-for (i = 0; i < size; i++) {
-  let row = "";
-  for (j = 0; j < size; j++) {
-    result = (size - table[j]);
-    if (result < i) {
-      row += charac;
-    }
-    if (result >= i) {
-      row += " ";
-    }
-  }
-  console.log(row);
+switch (choice) {
+  case occ["Gnou"]:
+    console.log("Gnou");
+    break;
+  case occ["Antilope"]:
+    console.log("Antilope");
+    break;
+  case occ["Rhinocéros"]:
+    console.log("Rhinocéros");
+    break;
 }
-

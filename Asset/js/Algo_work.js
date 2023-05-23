@@ -538,61 +538,88 @@
 //     console.log(tableVille)
 // }
 
+// PIERRE FEUILLE CISEAU
+
+// let table = ["Pierre", "Feuille", "Ciseau"];
+// let joueur1 = Math.floor(Math.random() * 3);
+// let joueur2 = Math.floor(Math.random() * 3);
+
+// console.log("Joueur 1 " + table[joueur1]);
+// console.log("Joueur 2 " + table[joueur2]);
+
+// if (joueur1 === joueur2) {
+//   console.log("Egalité");
+// }
+// if ((joueur1-joueur2+3)%3 === 1) {
+//   console.log("Vous avez gagné");
+// } else {
+//   console.log("Vous avez perdu");
+// }
+
 // let tableAnimal = [[1, "FizzBuzz"], [2, "Crackcode"], [3, "Ville"], [4, "Carré de X"], [5, "X vide"], [6, "Checkermate"], [7, "XOXO"], [8, "FizzBuzzTapioca"]];
 // let hasard = Math.floor(Math.random() * tableAnimal.length);
 // let exerciceAleatoire = tableAnimal[hasard][1];
 
 // console.log(exerciceAleatoire);
 
-// DES
-let dice1 = Math.floor(Math.random() * 3) + 1;
-let dice2 = Math.floor(Math.random() * 3) + 1;
-console.log(dice1 + " - " + dice2);
-//  Des animaux
-let tableAnimal = [
-  [0, "Gnou"],
-  [1, "Antilope"],
-  [2, "Rhinoceroce"],
-];
-let Animal = [];
-for (i = 0; i < 5; i++) {
-  let diceAnimal = Math.floor(Math.random() * tableAnimal.length);
-  Animal[i] = tableAnimal[diceAnimal][1];
-}
-console.log("les animaux sont : " + Animal);
-// Braconniers
-let Braconnier = [];
-for (i = 0; i < 2; i++) {
-  let diceBraconniers = Math.floor(Math.random() * tableAnimal.length);
-  Braconnier[i] = tableAnimal[diceBraconniers][1];
-}
-console.log("les braconniers sont : " + Braconnier);
-// Garde Chasse
-let Garde = [];
+// // DES
+// let dice1 = Math.floor(Math.random() * 3) + 1;
+// let dice2 = Math.floor(Math.random() * 3) + 1;
+// console.log(dice1 + " - " + dice2);
 
-let diceGarde = Math.floor(Math.random() * tableAnimal.length);
-Garde = tableAnimal[diceGarde][1];
-console.log("Le garde chasse est : " + Garde);
-let choice;
-if (dice1 === dice2) {
-  choice = dice1;
-} else {
-  choice = 6 - dice1 - dice2;
-}
-const occ = {};
+// // Des animaux
+// let tableAnimal = [
+//   [0, "Gnou"],
+//   [1, "Antilope"],
+//   [2, "Rhinocéros"],
+// ];
+// let Animal = [];
+// for (i = 0; i < 5; i++) {
+//   let diceAnimal = Math.floor(Math.random() * tableAnimal.length);
+//   Animal[i] = tableAnimal[diceAnimal][1];
+// }
+// console.log("Les animaux sont : " + Animal);
 
-for (const n of Animal) {
-  occ[n] = occ[n] ? occ[n] + 1 : 1;
-}
+// // Braconniers
+// let Braconnier = [];
+// for (i = 0; i < 2; i++) {
+//   let diceBraconniers = Math.floor(Math.random() * tableAnimal.length);
+//   Braconnier[i] = tableAnimal[diceBraconniers][1];
+// }
+// console.log("Les braconniers sont : " + Braconnier);
 
-switch (choice) {
-  case occ["Gnou"]:
-    console.log("Gnou");
-    break;
-  case occ["Antilope"]:
-    console.log("Antilope");
-    break;
-  case occ["Rhinocéros"]:
-    console.log("Rhinocéros");
-    break;
-}
+// // Garde Chasse
+// let Garde = Math.floor(Math.random() * tableAnimal.length);
+// console.log("Le garde-chasse est : " + tableAnimal[Garde][1]);
+
+// let choice;
+// if (dice1 === dice2) {
+//   choice = dice1;
+// } else {
+//   choice = 6 - dice1 - dice2;
+// }
+
+// const occ = {};
+
+// for (const n of Animal) {
+//   occ[n] = occ[n] ? occ[n] + 1 : 1;
+// }
+
+// let kill;
+// if (Braconnier[0] === Braconnier[1] && Braconnier[0] !== Garde) {
+//   occ[Braconnier[0]] -= 1;
+// } else if ((kill = 3 - Braconnier[0] - Braconnier[1]) !== Garde) {
+//   occ[kill] -= 1;
+// }
+
+// let winner = "Pas de gagnant";
+// if (choice === occ["Gnou"]) {
+//   winner = tableAnimal[0][1];
+// } else if (choice === occ["Antilope"]) {
+//   winner = tableAnimal[1][1];
+// } else if (choice === occ["Rhinocéros"]) {
+//   winner = tableAnimal[2][1];
+// }
+
+// console.log("Le gagnant est : " + winner);
+

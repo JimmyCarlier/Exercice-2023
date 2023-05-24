@@ -563,9 +563,9 @@
 // console.log(exerciceAleatoire);
 
 // // DES
-// let dice1 = Math.floor(Math.random() * 3) + 1;
-// let dice2 = Math.floor(Math.random() * 3) + 1;
-// console.log(dice1 + " - " + dice2);
+// let dice1 = Math.floor(Math.random() * 3) + 1;  // Lancer du premier dé (valeurs possibles : 1, 2, 3)
+// let dice2 = Math.floor(Math.random() * 3) + 1;  // Lancer du deuxième dé (valeurs possibles : 1, 2, 3)
+// console.log(dice1 + " - " + dice2);  // Affichage des résultats des dés
 
 // // Des animaux
 // let tableAnimal = [
@@ -575,51 +575,22 @@
 // ];
 // let Animal = [];
 // for (i = 0; i < 5; i++) {
-//   let diceAnimal = Math.floor(Math.random() * tableAnimal.length);
-//   Animal[i] = tableAnimal[diceAnimal][1];
+//   let diceAnimal = Math.floor(Math.random() * tableAnimal.length);  // Tirage aléatoire d'un index dans la table des animaux
+//   Animal[i] = tableAnimal[diceAnimal][1];  // Récupération de l'animal correspondant à l'index tiré et ajout à la liste des animaux
 // }
-// console.log("Les animaux sont : " + Animal);
+// console.log("Les animaux sont : " + Animal);  // Affichage de la liste des animaux
 
 // // Braconniers
 // let Braconnier = [];
 // for (i = 0; i < 2; i++) {
-//   let diceBraconniers = Math.floor(Math.random() * tableAnimal.length);
-//   Braconnier[i] = tableAnimal[diceBraconniers][1];
+//   let diceBraconniers = Math.floor(Math.random() * tableAnimal.length);  // Tirage aléatoire d'un index dans la table des animaux
+//   Braconnier[i] = tableAnimal[diceBraconniers][1];  // Récupération de l'animal correspondant à l'index tiré et ajout à la liste des braconniers
 // }
-// console.log("Les braconniers sont : " + Braconnier);
+// console.log("Les braconniers sont : " + Braconnier);  // Affichage de la liste des braconniers
 
 // // Garde Chasse
-// let Garde = Math.floor(Math.random() * tableAnimal.length);
-// console.log("Le garde-chasse est : " + tableAnimal[Garde][1]);
+// let Garde = Math.floor(Math.random() * tableAnimal.length);  // Tirage aléatoire d'un index dans la table des animaux pour le garde-chasse
+// console.log("Le garde-chasse est : " + tableAnimal[Garde][1]);  // Affichage de l'animal correspondant à l'index tiré pour le garde-chasse
 
-// let choice;
-// if (dice1 === dice2) {
-//   choice = dice1;
-// } else {
-//   choice = 6 - dice1 - dice2;
-// }
 
-// const occ = {};
-
-// for (const n of Animal) {
-//   occ[n] = occ[n] ? occ[n] + 1 : 1;
-// }
-
-// let kill;
-// if (Braconnier[0] === Braconnier[1] && Braconnier[0] !== Garde) {
-//   occ[Braconnier[0]] -= 1;
-// } else if ((kill = 3 - Braconnier[0] - Braconnier[1]) !== Garde) {
-//   occ[kill] -= 1;
-// }
-
-// let winner = "Pas de gagnant";
-// if (choice === occ["Gnou"]) {
-//   winner = tableAnimal[0][1];
-// } else if (choice === occ["Antilope"]) {
-//   winner = tableAnimal[1][1];
-// } else if (choice === occ["Rhinocéros"]) {
-//   winner = tableAnimal[2][1];
-// }
-
-// console.log("Le gagnant est : " + winner);
 

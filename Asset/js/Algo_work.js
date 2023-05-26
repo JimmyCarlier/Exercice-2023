@@ -562,35 +562,77 @@
 
 // console.log(exerciceAleatoire);
 
-// // DES
-// let dice1 = Math.floor(Math.random() * 3) + 1;  // Lancer du premier dé (valeurs possibles : 1, 2, 3)
-// let dice2 = Math.floor(Math.random() * 3) + 1;  // Lancer du deuxième dé (valeurs possibles : 1, 2, 3)
-// console.log(dice1 + " - " + dice2);  // Affichage des résultats des dés
+// DES
+let dice1 = Math.floor(Math.random() * 3) + 1; // Lancer du premier dé (valeurs possibles : 1, 2, 3)
+let dice2 = Math.floor(Math.random() * 3) + 1; // Lancer du deuxième dé (valeurs possibles : 1, 2, 3)
+// Des animaux
+let tableAnimal = [
+  [0, "Gnou"],
+  [1, "Antilope"],
+  [2, "Rhinocéros"],
+];
+let Animal = [];
+for (i = 0; i < 5; i++) {
+  let diceAnimal = Math.floor(Math.random() * tableAnimal.length); // Tirage aléatoire d'un index dans la table des animaux
+  Animal[i] = tableAnimal[diceAnimal][0]; // Récupération de l'animal correspondant à l'index tiré et ajout à la liste des animaux
+}
 
-// // Des animaux
-// let tableAnimal = [
-//   [0, "Gnou"],
-//   [1, "Antilope"],
-//   [2, "Rhinocéros"],
-// ];
-// let Animal = [];
-// for (i = 0; i < 5; i++) {
-//   let diceAnimal = Math.floor(Math.random() * tableAnimal.length);  // Tirage aléatoire d'un index dans la table des animaux
-//   Animal[i] = tableAnimal[diceAnimal][1];  // Récupération de l'animal correspondant à l'index tiré et ajout à la liste des animaux
+console.log(Animal);
+
+// Braconniers
+let Braconnier = [];
+for (i = 0; i < 2; i++) {
+  let diceBraconniers = Math.floor(Math.random() * tableAnimal.length); // Tirage aléatoire d'un index dans la table des animaux
+  Braconnier[i] = tableAnimal[diceBraconniers][0]; // Récupération de l'animal correspondant à l'index tiré et ajout à la liste des braconniers
+}
+// Garde Chasse
+let Garde = Math.floor(Math.random() * tableAnimal.length); // Tirage aléatoire d'un index dans la table des animaux pour le garde-chasse
+
+console.log(dice1 + " - " + dice2);
+console.log("Les animaux sont : " + Animal);
+console.log("Les braconniers sont : " + Braconnier); // Affichage de la liste des braconniers
+console.log("Le garde-chasse est : " + tableAnimal[Garde][0]); // Affichage de l'animal correspondant à l'index tiré pour le garde-chasse
+// console.log(occurrences)
+
+// for (let result of Animal) {
+//   console.log(result);
 // }
-// console.log("Les animaux sont : " + Animal);  // Affichage de la liste des animaux
 
-// // Braconniers
-// let Braconnier = [];
-// for (i = 0; i < 2; i++) {
-//   let diceBraconniers = Math.floor(Math.random() * tableAnimal.length);  // Tirage aléatoire d'un index dans la table des animaux
-//   Braconnier[i] = tableAnimal[diceBraconniers][1];  // Récupération de l'animal correspondant à l'index tiré et ajout à la liste des braconniers
+// tabOcc = [];
+
+// for (i = 0; i < 3; i++) {
+//   tabOcc[i] = [];
+//   for (j = 0; j < Animal.length; j++) {
+//     if (Animal[j] === tableAnimal[i][1]) tabOcc[i].push(Animal[j]);
+//   }
 // }
-// console.log("Les braconniers sont : " + Braconnier);  // Affichage de la liste des braconniers
+// console.log(tabOcc);
 
-// // Garde Chasse
-// let Garde = Math.floor(Math.random() * tableAnimal.length);  // Tirage aléatoire d'un index dans la table des animaux pour le garde-chasse
-// console.log("Le garde-chasse est : " + tableAnimal[Garde][1]);  // Affichage de l'animal correspondant à l'index tiré pour le garde-chasse
+occ = {
+  0: 0,
+  1: 0,
+  2: 0,
+};
 
+// voiture = {
+//   carburant: "diesel",
+//   conso: "5",
+//   marque: "peugeot",
+// };
 
+// console.log(voiture.carburant, voiture["carburant"]);
 
+for (numAnimal of Animal) {
+    occ[numAnimal] = occ[numAnimal] + 1;
+}
+
+//occ[numAnimal] = undefined !== occ[numAnimal] ? occ[numAnimal] + 1 : 1; // Opérateur ternaire
+
+console.log(occ);
+
+let animalKill;
+if (Braconnier[0] === Braconnier[1] && Braconnier[0] != Garde) {
+  animalKill = Braconnier[0];
+} else if (3 - (Braconnier[0] + Braconnier[1]) != Garde) {
+  animalKill = 3 - (Braconnier[0] + Braconnier[1]);
+}
